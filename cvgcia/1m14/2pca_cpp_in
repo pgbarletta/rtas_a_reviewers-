@@ -1,0 +1,16 @@
+# Step one. Generate average structure.
+parm /home/german/labo/16/exs/top_files/1m14_dry.prmtop 
+trajin 2full_fit_1m14.nc 
+rms first :1-267@CA
+average 2avg_1m14.pdb pdb
+run
+
+# Step two. RMS-Fit to average structure. Calculate covariance matrix.
+reference 2avg_1m14.pdb [avg]
+rms ref [avg] :1-267@CA RMSD
+matrix mwcovar name mtx_1m14 :1-267@CA
+createcrd crd_1m14
+run
+
+# Step three. Diagonalize matrix.
+runanalysis diagmatrix mtx_1m14 vecs 795 out 2modes_1m14

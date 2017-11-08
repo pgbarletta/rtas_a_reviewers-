@@ -1,0 +1,5 @@
+# 11/07/17 11:49:52
+# -p /home/german/labo/16/exs/top_files/256l_redry.prmtop
+# Loaded topologies:
+#   /home/german/labo/16/exs/top_files/256l_redry.prmtop
+trajin /home/german/labo/16/exs/run/256l/data/full_fit_256l.nc
