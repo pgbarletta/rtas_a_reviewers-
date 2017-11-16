@@ -1,0 +1,4 @@
+parm /home/german/labo/16/exs/top_files/256l_redry.prmtop 
+trajin /home/german/labo/16/exs/run/256l/data/full_fit_256l.nc 1 32000 
+trajout 1full_fit_256l.nc
+go

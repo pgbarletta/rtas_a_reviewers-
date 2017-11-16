@@ -1,0 +1,6 @@
+wat_1hvr_apo.nc
+
+sent 30 bytes  received 2.33G bytes  115.50K bytes/sec
+total size is 2.33G  speedup is 1.00
+packet_write_wait: Connection to 207.248.75.21 port 4222: Broken pipe
+rsync error: unexplained error (code 255) at main.c(1655) [generator=3.1.1]

@@ -1,0 +1,4 @@
+parm /home/german/labo/16/exs/top_files/1hvr_apo_dry.prmtop 
+trajin /home/german/labo/16/exs/run/1hvr_apo/data/full_fit_1hvr_apo.nc 1 32000 
+trajout 1full_fit_1hvr_apo.nc
+go

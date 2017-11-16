@@ -1,0 +1,16 @@
+# Step one. Generate average structure.
+parm /home/german/labo/16/exs/top_files/256l_redry.prmtop 
+trajin 2full_fit_256l.nc 
+rms first :3-155@CA
+average 2avg_256l.pdb pdb
+run
+
+# Step two. RMS-Fit to average structure. Calculate covariance matrix.
+reference 2avg_256l.pdb [avg]
+rms ref [avg] :3-155@CA RMSD
+matrix mwcovar name mtx_256l :3-155@CA
+createcrd crd_256l
+run
+
+# Step three. Diagonalize matrix.
+runanalysis diagmatrix mtx_256l vecs 453 out 2modes_256l

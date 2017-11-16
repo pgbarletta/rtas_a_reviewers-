@@ -1,0 +1,4 @@
+parm /home/german/labo/16/exs/top_files/1m14_dry.prmtop 
+trajin /home/german/labo/16/exs/run/1m14/data/full_fit_1m14.nc 31500 63000 1
+trajout 2full_fit_1m14.nc
+go
